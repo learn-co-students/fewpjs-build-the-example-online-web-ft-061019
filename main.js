@@ -34,7 +34,7 @@ function postLikeToggle(event) {
   // liked and unliked states
   function hearted(hrtBtn) {
     hrtBtn.textContent = FULL_HEART
-    hrtBtn.className = "heart"
+    hrtBtn.className = "activated-heart"
   }
 
   function unhearted(hrtBtn) {
