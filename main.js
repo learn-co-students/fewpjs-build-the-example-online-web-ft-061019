@@ -42,7 +42,6 @@ function postLikeToggle(event) {
     hrtBtn.className = "broken-heart"
   }
 
-  // debugger
   // user clicks heart - if empty fills, if full empties
   if (this.textContent == EMPTY_HEART) {
     // mimicServerCall - randomly fails 
