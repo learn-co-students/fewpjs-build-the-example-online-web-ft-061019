@@ -2,11 +2,33 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
+//ERROR MODAL FUNCTIONALITY
+const errorModal = document.querySelector('#modal')
+const errorModalContent = document.querySelector('#modal-message')
+function hideErrorModal(){
+  error.Modal.className = "hidden"
+}
 
+document.addEventListener('DOMContentLoaded', function(){
+  hideErrorModal()
+})
 
+function clickToLike(){
+  const hearts = document.querySelectorAll('.like-glyph')
+  hearts.forEach(likeHeart => likeHeart.addEventListener('click', likePost))
+}
 
+function postAction(event){
+  const heartButton = heart
+}
 
+function like(postAction){
+  heartButton.textContent = FULL_HEART
+}
+
+function unlike(postAction){
+  heartButton.textContent = EMPTY_HEART
+}
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
 //------------------------------------------------------------------------------
