@@ -1,16 +1,28 @@
 // Defining text characters for the empty and full hearts for you to use later.
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
-const modal = document.querySelector('modal')
 
+const modal = document.querySelector('modal')
 modal.setAttribute('class','hidden')
+//hidden MODAL ^^
 
 document.addEventListener('DOMContentLoaded', function(){
-  hideModal()
+  clickToLike(event);
 })
 
+function clickToLike(event){
+  mimicServerCall()
+}
 
 
+function likeEvent(event){
+  const likeButton = this
+}
+
+function displayLiked(likeButton){
+  likeButton.className.add('full-heart')
+  likeButton.textContent = FULL_HEART
+}
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
 //------------------------------------------------------------------------------
