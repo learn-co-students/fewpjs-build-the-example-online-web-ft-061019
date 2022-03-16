@@ -2,11 +2,27 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
+const modal = document.querySelector('modal')
+modal.setAttribute('class','hidden')
+//hidden MODAL ^^
+
+document.addEventListener('DOMContentLoaded', function(){
+  clickToLike(event);
+})
+
+function clickToLike(event){
+  mimicServerCall()
+}
 
 
+function likeEvent(event){
+  const likeButton = this
+}
 
-
+function displayLiked(likeButton){
+  likeButton.className.add('full-heart')
+  likeButton.textContent = FULL_HEART
+}
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
 //------------------------------------------------------------------------------
